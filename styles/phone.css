@@ -1,0 +1,107 @@
+.phone {
+    height: calc(163.9px * 4.5);
+    width: calc(74.9px * 4.5);
+    border-radius: calc(4px * 4.5);
+    box-shadow: inset 0px 0px 4px rgb(0 0 0 / 75%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+    position: relative;
+    background: #f2f2f2;
+}
+.phone::before {
+    height: calc(100% - 15px);
+    width: calc(100% - 5px);
+    background: black;
+    z-index: 1;
+    content: '';
+    border-radius: calc(4px * 4.5);
+    position: absolute;
+    top: 8px;
+}
+.phone > .top-antenna {
+    background-color: #cbcbcb;
+    width: 80%;
+    height: 5%;
+    position: absolute;
+    top: 0px;
+    box-shadow: inset 0px 1px 2px rgb(0 0 0 / 25%);
+}
+.phone > .horizontal-antenna {
+    background-color: #ebebeb;
+    width: 100%;
+    height: calc(2px * 4.5);
+    position: absolute;
+    top: 15%;
+    box-shadow: inset 1px 0px 2px rgb(0 0 0 / 25%);
+}
+.phone > .vertical-antenna {
+    background-color: #ebebeb;
+    width: calc(2px * 4.5);
+    height: 1%;
+    position: absolute;
+    bottom: 0px;
+    right: 30%;
+    box-shadow: inset 0px 1px 2px rgb(0 0 0 / 25%);
+}
+.phone > .power {
+    position: absolute;
+    top: 35%;
+    right: -2px;
+    height: 5%;
+    width: 3px;
+    background-color: #7d7d7d;
+}
+.phone > .volume {
+    position: absolute;
+    top: 45%;
+    right: -2px;
+    height: 11%;
+    width: 3px;
+    background-color: #7d7d7d;
+}
+.phone > .inner-shadow {
+    width: calc(100% - 13px);
+    height: calc(100% - 13px);
+    position: absolute;
+    top: 8px;
+    overflow: hidden;
+    border-radius: calc(4px * 4.5);
+    z-index: 1;
+}
+.phone > .inner-shadow::before {
+    box-shadow: inset 0 0 16px 20px rgb(255 255 255 / 50%);
+    width: 100%;
+    height: 116%;
+    position: absolute;
+    top: -8%;
+    left: 0px;
+    content: '';
+    border-radius: calc(4px * 4.5);
+    z-index: 2;
+}
+.phone > .display {
+    border-radius: calc(4px * 4.5);
+    background-color: #fff;
+    height: calc(157px * 4.5);
+    width: calc(71px * 4.5);
+    margin: 4% auto auto auto;
+    z-index: 3;
+}
+.phone > .display > .camera {
+    border-radius: 100%;
+    background-color: black;
+    height: calc(4px * 4.5);
+    width: calc(4px * 4.5);
+    margin: 0.5rem auto;
+}
+.phone > .usb {
+    background-color: black;
+    width: calc(9px * 4.5);
+    height: 0.45%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 25px 25px 0 0;
+}
